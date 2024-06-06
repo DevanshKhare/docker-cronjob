@@ -13,5 +13,4 @@ def call_api():
         print("API call failed",e)
         time.sleep(5)
 
-if __name__ == "__main__":
-    call_api()
+call_api()
