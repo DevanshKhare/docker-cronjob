@@ -9,6 +9,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY run_call_api.sh /app/run_call_api.sh
+RUN chmod +x /app/run_call_api.sh
 
 COPY crontab.txt /etc/cron.d/my-cron
 
